@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber"
 import { Room } from "./Optimized-room"
 import { useMediaQuery } from "react-responsive"
 import HeroLights from "./HeroLights"
+import Particles from "./Particles"
 
 const HeroExperience = () => {
 
@@ -20,6 +21,7 @@ const HeroExperience = () => {
         maxPolarAngle={Math.PI / 2}
       />
       <HeroLights/>
+      <Particles count={100}/>
       <group
        scale={isMobile? 0.7: 1}
         position={[0, -3.5, 0]}
